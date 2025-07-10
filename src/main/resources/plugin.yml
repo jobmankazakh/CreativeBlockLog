@@ -1,0 +1,7 @@
+name: CreativeBlockLog
+main: com.jobmankazakh.smartlog.SmartLog
+version: 1.0
+api-version: 1.21
+author: JobManKazakh
+description: Logs creative item taking, block placing and breaking.
+commands: {}
