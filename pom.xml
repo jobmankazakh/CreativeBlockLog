@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jobmankazakh</groupId>
+    <artifactId>smartlog</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>SmartLog</name>
+    <description>Paper plugin for logging creative item taking, block placing and breaking</description>
+    <url>https://github.com/jobmankazakh/CreativeBlockLog/</url>
+
+    <properties>
+    <java.version>17</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <paper.version>1.21.1-R0.1-SNAPSHOT</paper.version>
+ <!-- stable release version -->
+</properties>
+
+<repositories>
+    <repository>
+        <id>papermc-repo</id>
+        <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>io.papermc.paper</groupId>
+        <artifactId>paper-api</artifactId>
+        <version>${paper.version}</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+
+
+    <build>
+        <plugins>
+            <!-- Compiler plugin -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <!-- Shade plugin omitted unless needed -->
+        </plugins>
+    </build>
+
+</project>
