@@ -1,0 +1,25 @@
+# Enable or disable specific logs
+logCreativeTake: true
+logBlockPlace: true
+logBlockBreak: true
+
+# Log format strings:
+# Use placeholders:
+# {player} - player name
+# {action} - action type (TAKE, PLACE, BREAK)
+# {item} - item or block name
+# {count} - item count (for TAKE), use 1 for blocks
+# {x}, {y}, {z} - block coordinates (empty for TAKE)
+
+creativeTakeFormat: "{player},{action},{item},{count},,,"
+blockPlaceFormat: "{player},{action},{item},{count},{x},{y},{z}"
+blockBreakFormat: "{player},{action},{item},{count},{x},{y},{z}"
+
+# donate
+# I'm coder with brain damage and Charkot Marie Tooth disease
+# with bank card https://boosty.to/scssmp/
+# Or crypto
+# ETH/POL/BNB/other: 0xDfb2daB6804E263d087057920CA138C704247967
+# LTC: ltc1qug9ugx52c375n0ww83ugl9c5mnuterr5nfn0cr
+# TRX: TDYKJqtvppkTL76VdrMJfUs3pj4zGVZqUR
+# you can send even low as 0.1$, it still will help
